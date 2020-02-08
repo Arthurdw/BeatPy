@@ -42,8 +42,8 @@ def ntl(text):
 
 
 def ltb(text: str):
-    emotes = [("#", "#️⃣"), ("0", "0️⃣"), ("1", "1️⃣"), ("2", "2️⃣"), ("3", "3️⃣"), ("4", "4️⃣"), ("5", "5️⃣"), ("6", "6️⃣"),
-              ("7", "7️⃣"), ("8", "8️⃣"), ("9", "9️⃣"), ("10", "10️⃣"), ("z", ":regional_indicator_z:"),
+    emotes = [("#", "#️⃣"), ("0", "0️⃣"), ("1", "1️⃣"), ("2", "2️⃣"), ("3", "3️⃣"), ("4", "4️⃣"), ("5", "5️⃣"),
+              ("6", "6️⃣"), ("7", "7️⃣"), ("8", "8️⃣"), ("9", "9️⃣"), ("10", "10️⃣"), ("z", ":regional_indicator_z:"),
               ("y", ":regional_indicator_y:"), ("x", ":regional_indicator_x:"), ("w", ":regional_indicator_w:"),
               ("v", ":regional_indicator_v:"), ("u", ":regional_indicator_u:"), ("u", ":regional_indicator_u:"),
               ("t", ":regional_indicator_t:"), ("s", ":regional_indicator_s:"), ("r", ":regional_indicator_r:"),
@@ -52,10 +52,10 @@ def ltb(text: str):
               ("k", ":regional_indicator_k:"), ("j", ":regional_indicator_j:"), ("i", ":regional_indicator_i:"),
               ("h", ":regional_indicator_h:"), ("g", ":regional_indicator_g:"), ("f", ":regional_indicator_f:"),
               ("e", ":regional_indicator_e:"), ("d", ":regional_indicator_d:"), ("c", ":regional_indicator_c:"),
-              ("b", ":regional_indicator_b:"), ("a", ":regional_indicator_a:")]
+              ("b", ":regional_indicator_b:"), ("a", ":regional_indicator_a:"), (" ", " ")]
     new_text = ""
     for letter in text.lower():
         for emoji in emotes:
             if letter == emoji[0]:
-                new_text += text.replace(letter, emoji[1])
+                new_text += emoji[1]
     return new_text
