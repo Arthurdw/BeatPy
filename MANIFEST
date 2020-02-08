@@ -2,3 +2,7 @@
 setup.cfg
 setup.py
 BeatPy\__init__.py
+BeatPy\discord\__init__.py
+BeatPy\discord\formatter.py
+BeatPy\util\core\Process.py
+BeatPy\util\core\__init__.py

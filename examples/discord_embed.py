@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-from BeatPy.Discord import formatter
+from BeatPy.discord import formatter
 
 
 custom_layout = {"example": ("Example layout title",
