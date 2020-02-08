@@ -25,7 +25,7 @@ class Bot(commands.Bot):
         self.add_cog(BeatPy(self.user))
 
     def run(self):
-        super().run("NjQwNjI1NjgzNzk3NjM5MTgx.XhjZeQ.p_BLARO5aiSu56sp9iw2R_lnDZk", reconnect=True)
+        super().run("XXXYOURTOKENHEREXXX", reconnect=True)
 
     async def on_ready(self):
         print('Logged in as:')
