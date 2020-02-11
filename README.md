@@ -1,0 +1,1 @@
+# Type `pip install BeatPy` to install LTS
