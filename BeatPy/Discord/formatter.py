@@ -25,7 +25,7 @@ class Embed:
         self.title = title
         self.color = color or colour
 
-    def create(self, content=None, title=None, layout=None, footer=None, color=None, colour=None, footer_icon=None,
+    def create(self, content="", title=None, layout=None, footer=None, color=None, colour=None, footer_icon=None,
                footer_message=None, image=None, author=None, timestamp=None, thumbnail=None, fields=None, extra=None):
         """
         Create a discord embed.
@@ -58,7 +58,7 @@ class Embed:
         if footer or self.footer:
             embed.set_footer(text=footer_message or self.footer_message,
                              icon_url=footer_icon or self.footer_icon)
-        if timestamp or self.timestamp:
+        if self.timestamp if timestamp is None else timestamp:
             embed.timestamp = datetime.datetime.utcnow()
         if thumbnail is not None:
             embed.set_thumbnail(url=thumbnail)
